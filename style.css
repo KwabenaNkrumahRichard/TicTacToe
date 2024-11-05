@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  background-image: linear-gradient(to bottom right, #ededec, #dfddd7);
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+}
+.cell {
+  width: 10rem;
+  height: 10rem;
+  border: 5px solid #142e54;
+  line-height: 9rem;
+  font-size: 9rem;
+  cursor: pointer;
+  text-align: center;
+}
+
+#gameContainer {
+  text-align: center;
+}
+.cellContainer {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  width: 30rem;
+  margin: auto;
+  margin-bottom: 1rem;
+}
+
+#statusText {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  color: #373538;
+  /* color: red; */
+}
+
+#restartBtn {
+  padding: 1rem 2rem;
+  font-size: 2rem;
+  border: none;
+  border-radius: 1rem;
+  font-size: 2.5rem;
+  background-color: #007ee3;
+  color: #142e54;
+}
+
+#restartBtn:hover {
+  cursor: pointer;
+  transform: translateY(-1px);
+  box-shadow: 0 1px 5px black;
+  transition: all 0.2s;
+}
+
+#restartBtn:active {
+  transform: translateY(1px);
+  transition: transform 0.2s;
+}
+
+h1 {
+  font-size: 6rem;
+  margin-bottom: 1rem;
+  color: #007ee3;
+}
